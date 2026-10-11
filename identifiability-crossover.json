@@ -1,0 +1,308 @@
+{
+  "mode_axis": {
+    "background_diffusivity": 1.0,
+    "true_coefficients": [
+      0.2,
+      -0.12,
+      0.08,
+      -0.06,
+      0.05,
+      -0.04,
+      0.035,
+      -0.03
+    ],
+    "noise_fraction_of_rms": 0.02,
+    "threshold_delta_chi_square": 3.841459,
+    "rows": [
+      {
+        "n_modes": 6,
+        "n_identifiable": 4,
+        "fraction_identifiable": 0.6666666666666666,
+        "coefficients": [
+          {
+            "mode": 1,
+            "true_value": 0.2,
+            "max_rise_left": 299.6267276012893,
+            "max_rise_right": 11140.52945438511,
+            "identifiable": true
+          },
+          {
+            "mode": 2,
+            "true_value": -0.12,
+            "max_rise_left": 52.491492535795146,
+            "max_rise_right": 137.14239647765666,
+            "identifiable": true
+          },
+          {
+            "mode": 3,
+            "true_value": 0.08,
+            "max_rise_left": 3.5618741156496014,
+            "max_rise_right": 56.27926799224227,
+            "identifiable": false
+          },
+          {
+            "mode": 4,
+            "true_value": -0.06,
+            "max_rise_left": 37.08717846898952,
+            "max_rise_right": 25.336252863945987,
+            "identifiable": true
+          },
+          {
+            "mode": 5,
+            "true_value": 0.05,
+            "max_rise_left": 17.35021812318186,
+            "max_rise_right": 22.217306760398372,
+            "identifiable": true
+          },
+          {
+            "mode": 6,
+            "true_value": -0.04,
+            "max_rise_left": 28.92571716430149,
+            "max_rise_right": -2.6796664115226747,
+            "identifiable": false
+          }
+        ],
+        "weakest_rise": -2.6796664115226747
+      },
+      {
+        "n_modes": 7,
+        "n_identifiable": 7,
+        "fraction_identifiable": 1.0,
+        "coefficients": [
+          {
+            "mode": 1,
+            "true_value": 0.2,
+            "max_rise_left": 214.65860738486887,
+            "max_rise_right": 8991.10935723643,
+            "identifiable": true
+          },
+          {
+            "mode": 2,
+            "true_value": -0.12,
+            "max_rise_left": 31.60144793746062,
+            "max_rise_right": 121.59558222566429,
+            "identifiable": true
+          },
+          {
+            "mode": 3,
+            "true_value": 0.08,
+            "max_rise_left": 42.817554559124744,
+            "max_rise_right": 40.54791596840812,
+            "identifiable": true
+          },
+          {
+            "mode": 4,
+            "true_value": -0.06,
+            "max_rise_left": 23.449170743200597,
+            "max_rise_right": 33.901143145940864,
+            "identifiable": true
+          },
+          {
+            "mode": 5,
+            "true_value": 0.05,
+            "max_rise_left": 8.125943240228253,
+            "max_rise_right": 47.985042360545975,
+            "identifiable": true
+          },
+          {
+            "mode": 6,
+            "true_value": -0.04,
+            "max_rise_left": 28.18274202764124,
+            "max_rise_right": 7.255187251133464,
+            "identifiable": true
+          },
+          {
+            "mode": 7,
+            "true_value": 0.035,
+            "max_rise_left": 5.383316658233582,
+            "max_rise_right": 20.692021334671466,
+            "identifiable": true
+          }
+        ],
+        "weakest_rise": 5.383316658233582
+      }
+    ]
+  },
+  "noise_axis": [
+    {
+      "background_diffusivity": 1.0,
+      "true_coefficients": [
+        0.2,
+        -0.12,
+        0.08,
+        -0.06,
+        0.05,
+        -0.04,
+        0.035,
+        -0.03
+      ],
+      "noise_fraction_of_rms": 0.05,
+      "threshold_delta_chi_square": 3.841459,
+      "rows": [
+        {
+          "n_modes": 5,
+          "n_identifiable": 1,
+          "fraction_identifiable": 0.2,
+          "coefficients": [
+            {
+              "mode": 1,
+              "true_value": 0.2,
+              "max_rise_left": 17.227889486788342,
+              "max_rise_right": 2018.6890729176575,
+              "identifiable": true
+            },
+            {
+              "mode": 2,
+              "true_value": -0.12,
+              "max_rise_left": -0.0819110006018775,
+              "max_rise_right": 21.545851413717486,
+              "identifiable": false
+            },
+            {
+              "mode": 3,
+              "true_value": 0.08,
+              "max_rise_left": 4.137154231861018,
+              "max_rise_right": 2.1962046630676184,
+              "identifiable": false
+            },
+            {
+              "mode": 4,
+              "true_value": -0.06,
+              "max_rise_left": 6.33467509990615,
+              "max_rise_right": 0.06843317835244989,
+              "identifiable": false
+            },
+            {
+              "mode": 5,
+              "true_value": 0.05,
+              "max_rise_left": 5.110916316765753,
+              "max_rise_right": 3.167348699690507,
+              "identifiable": false
+            }
+          ],
+          "weakest_rise": -0.0819110006018775
+        }
+      ]
+    },
+    {
+      "background_diffusivity": 1.0,
+      "true_coefficients": [
+        0.2,
+        -0.12,
+        0.08,
+        -0.06,
+        0.05,
+        -0.04,
+        0.035,
+        -0.03
+      ],
+      "noise_fraction_of_rms": 0.1,
+      "threshold_delta_chi_square": 3.841459,
+      "rows": [
+        {
+          "n_modes": 5,
+          "n_identifiable": 0,
+          "fraction_identifiable": 0.0,
+          "coefficients": [
+            {
+              "mode": 1,
+              "true_value": 0.2,
+              "max_rise_left": 0.8243860901340554,
+              "max_rise_right": 514.5346607821123,
+              "identifiable": false
+            },
+            {
+              "mode": 2,
+              "true_value": -0.12,
+              "max_rise_left": -0.6624881854061755,
+              "max_rise_right": 6.909919671228494,
+              "identifiable": false
+            },
+            {
+              "mode": 3,
+              "true_value": 0.08,
+              "max_rise_left": 0.8668235709456269,
+              "max_rise_right": -0.24750486923616677,
+              "identifiable": false
+            },
+            {
+              "mode": 4,
+              "true_value": -0.06,
+              "max_rise_left": 1.234388654533518,
+              "max_rise_right": -0.6047990091269639,
+              "identifiable": false
+            },
+            {
+              "mode": 5,
+              "true_value": 0.05,
+              "max_rise_left": 0.6903267418327346,
+              "max_rise_right": -0.2313160732034305,
+              "identifiable": false
+            }
+          ],
+          "weakest_rise": -0.6624881854061755
+        }
+      ]
+    },
+    {
+      "background_diffusivity": 1.0,
+      "true_coefficients": [
+        0.2,
+        -0.12,
+        0.08,
+        -0.06,
+        0.05,
+        -0.04,
+        0.035,
+        -0.03
+      ],
+      "noise_fraction_of_rms": 0.2,
+      "threshold_delta_chi_square": 3.841459,
+      "rows": [
+        {
+          "n_modes": 5,
+          "n_identifiable": 0,
+          "fraction_identifiable": 0.0,
+          "coefficients": [
+            {
+              "mode": 1,
+              "true_value": 0.2,
+              "max_rise_left": -0.29351449992611833,
+              "max_rise_right": 132.56910806221282,
+              "identifiable": false
+            },
+            {
+              "mode": 2,
+              "true_value": -0.12,
+              "max_rise_left": -0.4953796423035328,
+              "max_rise_right": 1.3902317019459076,
+              "identifiable": false
+            },
+            {
+              "mode": 3,
+              "true_value": 0.08,
+              "max_rise_left": 0.5222275333705966,
+              "max_rise_right": -0.28735748309475184,
+              "identifiable": false
+            },
+            {
+              "mode": 4,
+              "true_value": -0.06,
+              "max_rise_left": -0.26585396377601,
+              "max_rise_right": -0.3330157771478923,
+              "identifiable": false
+            },
+            {
+              "mode": 5,
+              "true_value": 0.05,
+              "max_rise_left": 0.6446809669680533,
+              "max_rise_right": -0.1524764214739207,
+              "identifiable": false
+            }
+          ],
+          "weakest_rise": -0.4953796423035328
+        }
+      ]
+    }
+  ]
+}
