@@ -2,7 +2,8 @@
   "schema_version": "1.0.0",
   "release_id": "aliev-panfilov-cable-profiles",
   "publication_status": "local_unpublished",
-  "repository_url": null,
+  "repository_url": "https://github.com/Hermann-web/aliev-panfilov-cable-profiles",
+  "git_remote_url": "git@github.com:Hermann-web/aliev-panfilov-cable-profiles.git",
   "version": null,
   "source_revision": "0f7cbbd11d04695a53ad52eb89e01be1c6f360c7",
   "source_note": "The three JSON files match this committed revision. The public generator differs from that revision only in comments.",
@@ -22,8 +23,8 @@
       "role": "citation_metadata",
       "rights_class": "original_software",
       "licence": "MIT",
-      "sha256": "9788c0cd649033c491023d3396a158b60dff8d7ba0c5f438a42408c817a84c0b",
-      "size_bytes": 1244
+      "sha256": "1e4eb0bad4a2f13b686ce63b078fd3f87f4eef3cf44d54a9d5f2bb24cf5d882f",
+      "size_bytes": 1381
     },
     {
       "path": "LICENSE-MIT.txt",
@@ -38,16 +39,16 @@
       "role": "reader_documentation",
       "rights_class": "original_software",
       "licence": "MIT",
-      "sha256": "a3d7002eca8733dd1aa37f2c1fa00ae0d45e66ce2c0488c3dc633485aa60ce73",
-      "size_bytes": 2822
+      "sha256": "56cc117a1b83fb511aec6c03157cb65dde597993e9f62ca8cb392ca4932ade5f",
+      "size_bytes": 2933
     },
     {
       "path": "RIGHTS.md",
       "role": "rights_record",
       "rights_class": "original_software",
       "licence": "MIT",
-      "sha256": "71a3408adea579e3d4d13e058a95a15d12325c2cbde9a5cf583305263816d3af",
-      "size_bytes": 1312
+      "sha256": "862186075be7763380a506ce0237fe0cb7988805b68222fe9c92ce3281cd62ec",
+      "size_bytes": 1376
     },
     {
       "path": "identifiability-crossover.json",
@@ -86,8 +87,8 @@
       "role": "verification_source",
       "rights_class": "original_software",
       "licence": "MIT",
-      "sha256": "226396f99c2966448bceccaae295d8832548ea9ba41d24d5395a950c4ef9c77a",
-      "size_bytes": 15488
+      "sha256": "90f91bf3723dbcae1b4c9c304fa8bdc4c68fe1ceb673b0073ed9267dfca2721b",
+      "size_bytes": 16442
     }
   ]
 }

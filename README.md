@@ -1,6 +1,6 @@
 # Aliev–Panfilov cable profile counts
 
-This directory supports one numerical claim in *Target Selection in Cardiac Inverse Problems from Non-Invasive Measurements* (ICESST 2026). No DOI and no public repository URL are assigned.
+This directory supports one numerical claim in *Target Selection in Cardiac Inverse Problems from Non-Invasive Measurements* (ICESST 2026). The intended repository is <https://github.com/Hermann-web/aliev-panfilov-cable-profiles>. No DOI is assigned, and this checkout is not yet a published release.
 
 ## Claim these files support
 

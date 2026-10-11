@@ -30,7 +30,7 @@ These files are project-authored profile-likelihood outputs:
 
 `LICENSE-MIT.txt` does not grant reuse of these three files. No other reuse licence is asserted for them in this checkout. They are included so a reader can check the counts against the stored rises.
 
-This directory is a local unpublished projection. It has no version tag and no public remote. Do not treat it as a published data release.
+The recorded git remote is `git@github.com:Hermann-web/aliev-panfilov-cable-profiles.git`. No version is assigned. The JSON reuse licence is unresolved, so this checkout is not a published data release.
 
 ## Excluded material
 

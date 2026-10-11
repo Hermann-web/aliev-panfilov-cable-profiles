@@ -7,9 +7,13 @@ from __future__ import annotations
 
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+REPOSITORY_PAGE = "https://github.com/Hermann-web/aliev-panfilov-cable-profiles"
+GIT_REMOTE_SSH = "git@github.com:Hermann-web/aliev-panfilov-cable-profiles.git"
+GIT_REMOTE_HTTPS = "https://github.com/Hermann-web/aliev-panfilov-cable-profiles.git"
 THRESHOLD = 3.841459
 FIVE_COEFFICIENTS: tuple[float, ...] = (0.20, -0.12, 0.08, -0.06, 0.05)
 SCALAR_IDENTIFIABLE: tuple[str, ...] = ("a", "d", "epsilon", "k", "mu1")
@@ -248,6 +252,18 @@ def check_crossover(document: dict[str, object]) -> None:
             fail(f"noise {fraction} count is not {expected}")
 
 
+def check_origin() -> None:
+    """When this checkout is a git repository, require the recorded origin."""
+    if not (ROOT / ".git").exists():
+        return
+    url = subprocess.check_output(
+        ["git", "-C", str(ROOT), "remote", "get-url", "origin"],
+        text=True,
+    ).strip()
+    if url not in {GIT_REMOTE_SSH, GIT_REMOTE_HTTPS}:
+        fail("origin does not match the recorded public remote")
+
+
 def check_generator_settings() -> None:
     """Require the released generator to still name the run settings."""
     source = (ROOT / "practical_identifiability.py").read_text()
@@ -271,8 +287,12 @@ def check_manifest() -> None:
     manifest = require_dict(json.loads(manifest_path.read_text()), "manifest")
     if require_str(manifest.get("publication_status"), "publication_status") != "local_unpublished":
         fail("manifest publication status is not local_unpublished")
-    if manifest.get("repository_url") is not None or manifest.get("version") is not None:
-        fail("manifest records a repository URL or a version")
+    if require_str(manifest.get("repository_url"), "repository_url") != REPOSITORY_PAGE:
+        fail("manifest repository URL does not match the recorded remote")
+    if require_str(manifest.get("git_remote_url"), "git_remote_url") != GIT_REMOTE_SSH:
+        fail("manifest git remote does not match the recorded remote")
+    if manifest.get("version") is not None:
+        fail("manifest records a version")
     files = require_list(manifest.get("files"), "manifest files")
     seen: set[str] = set()
     for index, item in enumerate(files):
@@ -332,6 +352,7 @@ def main() -> int:
     check_crossover(load_json("identifiability-crossover.json"))
     check_generator_settings()
     check_manifest()
+    check_origin()
     check_no_private_markers()
     print("five-mode cosine field: 5/5, 1/5, 0/5, 0/5 at 2%, 5%, 10%, 20% RMS")
     print("scalar preset at 2% RMS: 5 of 6 pass; mu2 is one-sided")
