@@ -1,37 +1,36 @@
 # Rights and scope
 
-Two asset classes are present. A licence for one class does not cover the other.
+This repository publishes profile-likelihood counts. `CITATION.cff` records the type `dataset`, so the top-level `LICENSE` is CC BY 4.0. Source code is under the MIT License in `LICENSE-MIT.txt`. A licence for one class does not cover the other.
 
-## Original software
+## Profile outputs and reader documentation
 
-These files are original software, or documentation associated with that software:
+These files are licensed under CC BY 4.0 through `LICENSE`.
 
-- `practical_identifiability.py`
-- `verify_profiles.py`
-- `README.md`
-- `RIGHTS.md`
-- `CITATION.cff`
-- `LICENSE-MIT.txt`
-- `.gitignore`
-- `PUBLIC-RELEASE-MANIFEST.json`
-- `SHA256SUMS`
-
-They are licensed under the MIT License in `LICENSE-MIT.txt`.
-
-Copyright (c) 2026 Fondation Ecole Centrale Casablanca. Hermann Agossou is the primary software author.
-
-## Numerical outputs
-
-These files are project-authored profile-likelihood outputs:
+Copyright (c) 2026 Fondation Ecole Centrale Casablanca. Hermann Agossou is the primary author.
 
 - `practical-identifiability.json`
 - `identifiability-field-scaling.json`
 - `identifiability-crossover.json`
+- `README.md`
+- `RIGHTS.md`
+- `CITATION.cff`
+- `PUBLIC-RELEASE-MANIFEST.json`
+- `SHA256SUMS`
+- `LICENSE`
 
-`LICENSE-MIT.txt` does not grant reuse of these three files. No other reuse licence is asserted for them in this checkout. They are included so a reader can check the counts against the stored rises.
+## Software
 
-The recorded git remote is `git@github.com:Hermann-web/aliev-panfilov-cable-profiles.git`. No version is assigned. The JSON reuse licence is unresolved, so this checkout is not a published data release.
+These files are licensed under the MIT License through `LICENSE-MIT.txt`.
+
+Copyright (c) 2026 Fondation Ecole Centrale Casablanca. Hermann Agossou is the primary software author.
+
+- `practical_identifiability.py`
+- `verify_profiles.py`
+- `LICENSE-MIT.txt`
+- `.gitignore`
 
 ## Excluded material
 
-This projection does not contain the manuscript, a supplement, review correspondence, a catalogue, provider payloads, third-party publications, or an unrestricted-field identifiability theorem.
+Neither licence covers the manuscript, a supplement, review correspondence, a catalogue, provider payloads, or third-party publications. The counts are practical identifiability for one cosine parameterization. They are not a failure theorem for an unrestricted diffusivity field.
+
+No version is assigned. This checkout is not yet a published release.

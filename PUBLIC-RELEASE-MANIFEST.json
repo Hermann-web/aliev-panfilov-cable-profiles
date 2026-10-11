@@ -21,10 +21,18 @@
     {
       "path": "CITATION.cff",
       "role": "citation_metadata",
-      "rights_class": "original_software",
-      "licence": "MIT",
-      "sha256": "1e4eb0bad4a2f13b686ce63b078fd3f87f4eef3cf44d54a9d5f2bb24cf5d882f",
-      "size_bytes": 1381
+      "rights_class": "project_authored_output",
+      "licence": "CC-BY-4.0",
+      "sha256": "7704878aee8de5ca65697a84d7470c6559b30f63fc4b2979b6c3fdf162338422",
+      "size_bytes": 1331
+    },
+    {
+      "path": "LICENSE",
+      "role": "rights_record",
+      "rights_class": "project_authored_output",
+      "licence": "CC-BY-4.0",
+      "sha256": "636418dc8ba653eaff8400f6a7d69265c0a7daa1269c5f49088c7c24a9f541da",
+      "size_bytes": 723
     },
     {
       "path": "LICENSE-MIT.txt",
@@ -37,40 +45,40 @@
     {
       "path": "README.md",
       "role": "reader_documentation",
-      "rights_class": "original_software",
-      "licence": "MIT",
-      "sha256": "56cc117a1b83fb511aec6c03157cb65dde597993e9f62ca8cb392ca4932ade5f",
-      "size_bytes": 2933
+      "rights_class": "project_authored_output",
+      "licence": "CC-BY-4.0",
+      "sha256": "0c27f9a9f6041afb1c18f54e92549090d53c8e616a4f8b0ec5804edf406cb590",
+      "size_bytes": 3246
     },
     {
       "path": "RIGHTS.md",
       "role": "rights_record",
-      "rights_class": "original_software",
-      "licence": "MIT",
-      "sha256": "862186075be7763380a506ce0237fe0cb7988805b68222fe9c92ce3281cd62ec",
-      "size_bytes": 1376
+      "rights_class": "project_authored_output",
+      "licence": "CC-BY-4.0",
+      "sha256": "e76fb3597979798b3581b6683852bf794c7e44f00426c5c6546df1f7e0f9be55",
+      "size_bytes": 1343
     },
     {
       "path": "identifiability-crossover.json",
       "role": "machine_readable_evidence",
-      "rights_class": "numerical_output",
-      "licence": "unresolved",
+      "rights_class": "project_authored_output",
+      "licence": "CC-BY-4.0",
       "sha256": "c2b2e24e2e4e65c6fea5466d8b97c686ebda1f9f5bf45a1a093a47fe46c7b1f7",
       "size_bytes": 8391
     },
     {
       "path": "identifiability-field-scaling.json",
       "role": "machine_readable_evidence",
-      "rights_class": "numerical_output",
-      "licence": "unresolved",
+      "rights_class": "project_authored_output",
+      "licence": "CC-BY-4.0",
       "sha256": "d535d5a53abe6c7f33266c297023ac7e2edce61e5f268d9cd1e4f33d81faeef8",
       "size_bytes": 3793
     },
     {
       "path": "practical-identifiability.json",
       "role": "machine_readable_evidence",
-      "rights_class": "numerical_output",
-      "licence": "unresolved",
+      "rights_class": "project_authored_output",
+      "licence": "CC-BY-4.0",
       "sha256": "d9a27fa12705d30abebac588b63a7a5e82003546fbad07a1d91b82713a4c6ec2",
       "size_bytes": 6221
     },
@@ -87,8 +95,8 @@
       "role": "verification_source",
       "rights_class": "original_software",
       "licence": "MIT",
-      "sha256": "90f91bf3723dbcae1b4c9c304fa8bdc4c68fe1ceb673b0073ed9267dfca2721b",
-      "size_bytes": 16442
+      "sha256": "f6afb4f9f11f59f1aa556ee4129e58f9d75b1b4e1c1eb892a8610cbaad414640",
+      "size_bytes": 17357
     }
   ]
 }

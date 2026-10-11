@@ -306,9 +306,9 @@ def check_manifest() -> None:
         require_str(entry.get("role"), f"manifest role {name}")
         if rights == "original_software" and licence != "MIT":
             fail(f"{name} is software without the MIT licence")
-        if rights == "numerical_output" and licence != "unresolved":
-            fail(f"{name} asserts a licence for an unresolved numerical output")
-        if rights not in {"original_software", "numerical_output"}:
+        if rights == "project_authored_output" and licence != "CC-BY-4.0":
+            fail(f"{name} is a profile output without CC BY 4.0")
+        if rights not in {"original_software", "project_authored_output"}:
             fail(f"{name} has an unknown rights class")
         path = ROOT / name
         if not path.is_file() or path.is_symlink():
@@ -333,6 +333,23 @@ def check_manifest() -> None:
             fail(f"SHA256SUMS mismatch for {name}")
 
 
+def check_rights_text() -> None:
+    """Require the reader files to state the same two-licence split."""
+    rights = (ROOT / "RIGHTS.md").read_text()
+    readme = (ROOT / "README.md").read_text()
+    notice = (ROOT / "LICENSE").read_text()
+    software = (ROOT / "LICENSE-MIT.txt").read_text()
+    for label, text in (("RIGHTS.md", rights), ("README.md", readme)):
+        if "CC BY 4.0" not in text or "MIT" not in text:
+            fail(f"{label} does not name both licences")
+    if "Fondation Ecole Centrale Casablanca" not in notice or "CC BY 4.0" not in notice:
+        fail("LICENSE does not state the dataset notice")
+    if not software.startswith("MIT License\n") or "Fondation Ecole Centrale Casablanca" not in software:
+        fail("LICENSE-MIT.txt is not the software notice")
+    if "unresolved" in rights.lower():
+        fail("RIGHTS.md still leaves a licence unresolved")
+
+
 def check_no_private_markers() -> None:
     """Reject local paths and internal working notes in the projection."""
     forbidden = ("/home/", "reviews-round1", "engineering-plan", "identifiability-note")
@@ -353,6 +370,7 @@ def main() -> int:
     check_generator_settings()
     check_manifest()
     check_origin()
+    check_rights_text()
     check_no_private_markers()
     print("five-mode cosine field: 5/5, 1/5, 0/5, 0/5 at 2%, 5%, 10%, 20% RMS")
     print("scalar preset at 2% RMS: 5 of 6 pass; mu2 is one-sided")

@@ -34,6 +34,10 @@ python3 practical_identifiability.py --check
 
 The released field-scaling file records the five cosine coefficients used for modes one to five. The generator also carries three further coefficients for the six-mode and seven-mode rows. At noise 0.02 those rows are 4/6 and 7/7. The six-mode margin is negative, and the mode sweep is not monotone. No optimizer convergence trace is stored.
 
+## Licence
+
+The profile outputs and this documentation are under CC BY 4.0 (`LICENSE`). Copyright (c) 2026 Fondation Ecole Centrale Casablanca. Hermann Agossou is the primary author. The generator and `verify_profiles.py` are under the MIT License (`LICENSE-MIT.txt`). `RIGHTS.md` lists the files in each class.
+
 ## What this is not
 
 The cable has one spatial dimension, one geometry, and one preset. The five-mode row does not rank inverse targets, and it does not establish non-identifiability of a general diffusivity field.

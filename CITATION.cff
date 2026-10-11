@@ -3,10 +3,10 @@ title: >-
   Profile-likelihood counts for a cosine diffusivity on a one-dimensional
   Aliev-Panfilov cable
 message: >-
-  Numerical support for one parameterization. The intended repository is
-  https://github.com/Hermann-web/aliev-panfilov-cable-profiles. No version and
-  no DOI are assigned. See RIGHTS.md before redistributing the JSON outputs.
+  Numerical support for one parameterization. The profile outputs are CC BY 4.0.
+  The Python files are MIT. See RIGHTS.md. No version and no DOI are assigned.
 type: dataset
+license: CC-BY-4.0
 repository-code: https://github.com/Hermann-web/aliev-panfilov-cable-profiles
 authors:
   - family-names: Agossou
