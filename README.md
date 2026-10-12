@@ -22,10 +22,11 @@ The checker uses the Python standard library. It recounts every stored rise agai
 
 ## Regenerate
 
-`practical_identifiability.py` is the generator. NumPy is its only dependency. This checkout does not pin a NumPy build, so a fresh run is a recomputation rather than a byte-level replay of the released JSON.
+`practical_identifiability.py` is the generator. NumPy is its only dependency. The regeneration environment is Python 3.10 and NumPy 2.2.6, pinned in `pyproject.toml` and `uv.lock`. The stored JSON does not record the build that first wrote it, so a fresh run is a recomputation rather than a byte-level replay.
 
 ```bash
-python3 practical_identifiability.py --check
+uv sync
+uv run python practical_identifiability.py --check
 ```
 
 `--check` recomputes the six scalar profiles and compares their pass list with `practical-identifiability.json`. It does not rewrite that file.

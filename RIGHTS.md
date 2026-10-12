@@ -26,6 +26,8 @@ Copyright (c) 2026 Fondation Ecole Centrale Casablanca. Hermann Agossou is the p
 
 - `practical_identifiability.py`
 - `verify_profiles.py`
+- `pyproject.toml`
+- `uv.lock`
 - `LICENSE-MIT.txt`
 - `.gitignore`
 
